@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+}
+h6{
+    font-size: 10px;
+}
+h5{
+    font-size: 14px;
+}
+h4{
+    font-size: 18px;
+}
+h3{
+    font-size: 20px;
+}
+h2{
+    font-size: 22px;
+}
+h1{
+    font-size: 24px;
+}
+p{
+    font-size: 14px;
+}
+.container{
+width: 100%;
+height: 100vh;
+display: flex;
+ }
+.home{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-left: 30px solid orange;
+    
+ } 
+ img{
+    width: 100%;
+ }
+ .profile-img{
+    width: 30%;
+    float: left;
+    position: relative;
+    height: 100%;
+
+ }
+ .profile-img img{
+    /* position:absolute ;
+    bottom: 0; */
+    border: 1px solid black;
+    height: 80vh;
+    border-radius: 5px;
+    margin-top: 100px;
+ }
+
+ .container >.home >.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    
+
+ }
+ .container .content p{
+text-align: start;
+ }
+.container .content button{
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+.container .content button span{
+    top: 0;
+    right: -10px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+}
+ .container .content .name{
+    color: orange;
+ }
+ .container .content .heading{
+    margin-bottom: 10px;
+ }
+ .container .content h2{
+    margin-left: 40px;
+ }
+ .container .content .content-center{
+    margin: 0 auto;
+    width: 70%;
+    
+ }
+ .container .nav-icons{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    
+ }
+ .container .nav-icons .mode{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+ }
+
+ .container .nav-icons .personal-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 10px;
+ }
+ .container .nav-icons .personal-info i {
+    margin-bottom: 20px;
+    
+    
+ }
+ .active{
+    background-color: orange;
+    padding: 10px;
+    border-radius:30px ;
+    /* width: 100px;
+    height:40px;
+    text-align: end; */
+ }
+ .active:hover{
+
+ }
+ /* .container .nav-icons .personal-info i .fa-house:hover{
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: orange;
+ }
+ .container .nav-icons .personal-info .fa-user:hover{
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: orange;
+ }
+ .container .nav-icons .personal-info .fa-briefcase:hover{
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: orange;
+ }
+ .container .nav-icons .personal-info .fa-envelope:hover{
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: orange;
+ } */
+ /* .container .nav-icons .personal-info  i:hover{
+    height: 100%;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 50%;
+
+ }
+  */
+/* About*/
+.about-container{
+    display: none;
+    width: 90%;
+    height: 100vh;
+    transition:5s ease ;
+    transform: translate(-50%,-50%);
+}
+.about-container img{
+    width: 100%;
+}
+.about-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-container h1 span{
+    color: orange;
+}
+.about-container .table-container{
+    margin-left: 250px;
+    margin-bottom: 40px;
+
+}
+.about-container .table-container table tr,.about-container .table-container table td{
+padding: 10px;
+}
+.about-container .table-container button{
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+.about-container .table-container button span{
+    top: 0;
+    right: -15px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+}
+.about-container .table-container button span i{
+color: white;
+}
+.about-container h4{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-container .skills .skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-container .skills .skills-container .skills-section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.about-container .skills .skills-container .skills-section div{
+    margin-right: 30px;
+}
+.about-container .skills .skills-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid orange;
+} 
+.about-container .skills .skills-container h5{
+    text-align: center;
+}
+.experience-education-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 80%;
+}
+.education {
+    width: 100%;
+}
+.education h3{
+text-align: center;
+margin-top: 30px;
+}
+/* .experience-education-container .education-info .education-heading{
+    display: flex;
+    justify-content: space-around;
+} */
+.experience-education-container .education-info .education-heading i{
+    display: inline;
+    margin-right: 20px;
+    border-radius: 40%;
+    float: left;
+    padding: 10px;
+    background-color: orange;
+}
+.experience-education-container .education-info .education-heading span{
+    display: inline;
+}
+/*  Portfolio*/
+.portfolio-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+}
+.portfolio-container h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.portfolio-container h2 span{
+    color: orange;
+}
+.portfolio-container .portfolio-navbar ul{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.portfolio-container .portfolio-navbar ul li{
+    margin-right: 5px;
+}
+.portfolio-container .portfolio-navbar ul  #all{
+    color: orange;
+}
+.portfolio-container .portfolio-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.portfolio-container .portfolio-content div{
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio-container.portfolio-content div img{
+    width: 100%;
+    height: 100%;
+}
+/*Contact me*/
+.contact-container{
+    display: none;
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-container h2 span{
+    color: orange;
+}
+.contact-container .contact-section-center{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 50px auto;
+}
+.contact-container .contact-section-center .address{
+    width: 45%;
+    margin-right: 20px;
+    
+}
+.contact-container .contact-section-center .form{
+width: 45%;
+
+
+}
+.contact-container .contact-section-center .form .action{
+    display: flex;
+    margin-bottom: 10px;
+}
+.contact-container .contact-section-center .form .action input{
+    flex: 1;
+    background-color: #1B2430;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    
+}
+.contact-container .contact-section-center .form .input-textarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+ 
+}
+.contact-container .contact-section-center .form .input-textarea input{
+    background-color: #1B2430;  
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+
+}
+.contact-container .contact-section-center .form .input-textarea textarea{
+    background-color: #1B2430;
+    border-radius:30px ;
+    padding: 8px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+.address h4{
+margin-bottom: 5px;
+}
+.address p{
+    margin-bottom: 5px;
+}
+.address-point table tr td i{
+    margin-right: 5px;
+    color: orange;
+    
+}
+.form button {
+    padding: 8px;
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.form button span{
+    top: 0;
+    right: -10px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+  
+}
+.footer-icons{
+    margin-top: 10px;
+}
+.footer-icons i{
+margin-right: 5px;
+padding: 5px;
+background-color: #1B2430;
+color: white;
+border-radius: 50%;
+}
+.form button span i{
+    font-size: 16px;
+    color: white;
+}
+.show{
+    display: block;
+}
